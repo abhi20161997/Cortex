@@ -38,8 +38,8 @@ body {
   padding: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * links - (_document-setup) 
+/* -------------------------------------------------------------------
+ * links - (_document-setup)
  * ------------------------------------------------------------------- */
 a, a:visited {
   color: #07617d;
@@ -902,7 +902,7 @@ input::-moz-focus-inner {
   text-align: center;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * section-intro
  * ------------------------------------------------------------------- */
@@ -1056,7 +1056,7 @@ header .header-logo a {
   right: 9px;
   margin-top: -1.5px;
 }
-#header-menu-trigger .header-menu-icon::before, 
+#header-menu-trigger .header-menu-icon::before,
 #header-menu-trigger .header-menu-icon::after {
   content: '';
   width: 100%;
@@ -1131,7 +1131,7 @@ header .header-logo a {
   color: rgba(255, 255, 255, 0.25);
   display: block;
 }
-#menu-nav-wrap .nav-list li a:hover, 
+#menu-nav-wrap .nav-list li a:hover,
 #menu-nav-wrap .nav-list li a:focus {
   color: white;
 }
@@ -1149,7 +1149,7 @@ header .header-logo a {
 #menu-nav-wrap .header-social-list li a {
   color: rgba(255, 255, 255, 0.15);
 }
-#menu-nav-wrap .header-social-list li a:hover, 
+#menu-nav-wrap .header-social-list li a:hover,
 #menu-nav-wrap .header-social-list li a:focus {
   color: white;
 }
@@ -1169,7 +1169,7 @@ header .header-logo a {
   text-shadow: none;
   color: transparent;
 }
-#menu-nav-wrap .close-button span::before, 
+#menu-nav-wrap .close-button span::before,
 #menu-nav-wrap .close-button span::after {
   content: "";
   display: block;
@@ -1317,8 +1317,8 @@ header .header-logo a {
 .home-social-list li a, .home-social-list li a:visited {
   color: #FFFFFF;
 }
-.home-social-list li a:hover, 
-.home-social-list li a:focus, 
+.home-social-list li a:hover,
+.home-social-list li a:focus,
 .home-social-list li a:active {
   color: #151515;
 }
@@ -1489,20 +1489,20 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 
 
-#about {
+#about,#events {
   position: relative;
   padding: 4.2rem 0 12rem;
   background-color: #FFFFFF;
   min-height: 696px;
   text-align: center;
 }
-#about .about-wrap {
+#about .about-wrap,#events .about-wrap {
   max-width: 850px;
 }
-#about span {
+#about span, #events span {
   color: #07617d;
 }
-#about h3 {
+#about h3,#events h3{
   font-family: "montserrat-bold", sans-serif;
   font-size: 1.8rem;
   line-height: 1.667;
@@ -1511,6 +1511,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   letter-spacing: .3rem;
   position: relative;
 }
+
 #about h3::before {
   display: block;
   content: "";
@@ -1519,7 +1520,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
   background-color: rgba(149, 149, 149, 0.7);
   margin: 0 auto 2.4rem;
 }
-#about .lead {
+#about .lead, #events .lead {
   font-family: "librebaskerville-bold", serif;
   font-size: 4rem;
   line-height: 1.8;
@@ -1529,63 +1530,63 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 
 
 @media only screen and (max-width: 1024px) {
-  #about {
+  #about, #events {
     min-height: 636px;
   }
-  #about .about-wrap {
+  #about .about-wrap,#events .about-wrap {
     max-width: 800px;
   }
-  #about .lead {
+  #about .lead, #events .lead {
     font-size: 3.8rem;
   }
 }
 @media only screen and (max-width: 900px) {
-  #about .about-wrap {
+  #about .about-wrap, #events .about-wrap {
     max-width: 720px;
   }
-  #about .lead {
+  #about .lead, #events .lead {
     font-size: 3.6rem;
   }
 }
 @media only screen and (max-width: 768px) {
-  #about h3 {
+  #about h3,#events h3 {
     font-size: 1.7rem;
   }
-  #about .about-wrap {
+  #about .about-wrap, #events .about-wrap  {
     max-width: 600px;
   }
-  #about .lead {
+  #about .lead, #events .lead {
     font-size: 3.1rem;
   }
 }
 @media only screen and (max-width: 600px) {
-  #about {
+  #about , #events{
     min-height: auto;
   }
-  #about .about-wrap {
+  #about .about-wrap, #events .about-wrap {
     max-width: 500px;
   }
-  #about .lead {
+  #about .lead,#events .lead {
     margin-top: 4.8rem;
     font-size: 2.8rem;
   }
 }
 @media only screen and (max-width: 500px) {
-  #about h3 {
+  #about h3, #events h3 {
     font-size: 1.5rem;
   }
-  #about .lead {
+  #about .lead,#events .lead {
     font-size: 2.5rem;
   }
 }
 @media only screen and (max-width: 400px) {
-  #about {
+  #about,#events {
     padding: 4.2rem 0 9.6rem;
   }
-  #about .about-wrap {
+  #about .about-wrap,#events .about-wrap {
     max-width: 380px;
   }
-  #about .lead {
+  #about .lead,#events .lead {
     font-size: 2.3rem;
   }
 }
@@ -2035,11 +2036,11 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #contact form :-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
-  
+
 }
 #contact form ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.3);
-  
+
 }
 #contact form :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.3);
