@@ -63,7 +63,7 @@
             -o-animation: blink 0.7s infinite;
             animation: blink 0.7s infinite
         }
-        
+
         @-keyframes blink {
             0% {
                 opacity: 1
@@ -75,7 +75,7 @@
                 opacity: 1
             }
         }
-        
+
         @-webkit-keyframes blink {
             0% {
                 opacity: 1
@@ -87,7 +87,7 @@
                 opacity: 1
             }
         }
-        
+
         @-moz-keyframes blink {
             0% {
                 opacity: 1
@@ -99,7 +99,7 @@
                 opacity: 1
             }
         }
-        
+
         @-ms-keyframes blink {
             0% {
                 opacity: 1
@@ -111,7 +111,7 @@
                 opacity: 1
             }
         }
-        
+
         @-o-keyframes blink {
             0% {
                 opacity: 1
@@ -123,37 +123,71 @@
                 opacity: 1
             }
         }
-        
+
         .typed-fade-out {
             opacity: 0;
             animation: 0;
             transition: opacity .25s
         }
-        
+
         #typed {
             white-space: pre;
             font-size: 3vh;
             color: white;
             font-weight: bold
         }
+
+      @media only screen and (max-width:500px) {
+          .card {
+            z-index: 100;
+            background-color: white;
+      		 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      		 	transition: 0.3s;
+      			width: 80%;
+      			margin: 30px;
+      		}
+          .card-container {
+      			height: 220px;
+      			font-size: 12px;
+      			padding: 2px 16px;
+      		}
+      }
+      @media only screen and (max-width:2000px) and (min-width: 1000px) {
         .card {
-        	z-index: 100;
-        	background-color: white;
-		 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-		 	transition: 0.3s;
-			width: 23%;
-			margin: 30px;
-		}
+          z-index: 100;
+          background-color: white;
+    		 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    		 	transition: 0.3s;
+    			width: 25%;
+    			margin: 30px;
+    		}
+        .card-container {
+    			height: 220px;
+    			font-size: 12px;
+    			padding: 2px 16px;
+    		}
+      }
+      @media only screen and (max-width:1000px) and (min-width: 500px) {
+        .card {
+          z-index: 100;
+          background-color: white;
+    		 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    		 	transition: 0.3s;
+    			width: 35%;
+    			margin: 30px;
+    		}
+        .card-container {
+    			height: 230px;
+    			font-size: 12px;
+    			padding: 2px 16px;
+    		}
+      }
 
 		.card:hover {
 			box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 		}
 
-		.card-container {
-			height: 220px;
-			font-size: 12px;
-			padding: 2px 16px;
-		}
+
     </style>
 </head>
 
@@ -212,21 +246,25 @@
             </div>
         </div>
     </section>
+
+
     <section id="services">
         <div class="overlay"></div>
         <div class="gradient-overlay"></div>
+
         <div class="row narrow section-intro with-bottom-sep animate-this">
             <div class="col-full">
             	<p class="" style="font-size: 25px; font-family: sans-serif;">Creating a
                     	<span style="color: #00bfff">Special Life</span>
-  							for a 
-  						<span style="font-weight: bold;">Special Person</span>   					
+  							for a
+  						<span style="font-weight: bold;">Special Person</span>
                     </p>
                 <h1>BIONICS OF THE FUTURE</h1>
                 <h3>The Problem</h3>
-                
+
             </div>
         </div>
+
         <div class="row services-content">
             <div class="services-list block-1-3 block-tab-full group">
                 <div class="bgrid service-item animate-this"><span class="icon"><i class="material-icons" style="color:yellow">accessibility</i></span>
@@ -263,19 +301,19 @@
             <div id="achiever-slider" class="flex-slider animate-this">
                 <ul class="slides">
                     <li>
-                    	<h1>Devendra</h1>                    	
-                        <p style="font-size: 20px;"> At an early age of 8, Devendra had to get his left arm amputated as he accidentally touched a live electric cable and was electrocuted. 
+                    	<h1>Devendra</h1>
+                        <p style="font-size: 20px;"> At an early age of 8, Devendra had to get his left arm amputated as he accidentally touched a live electric cable and was electrocuted.
 						The first Indian Paralympian to win two gold medals at the Paralympics, he won his first gold in the javelin throw at the 2004 Summer Paralympics in Athens, becoming only the second gold medalist at the Paralympics for his country. At the 2016 Summer Paralympics in Rio de Janeiro, he won a second gold medal in the same event, bettering his previous record.</p>
-						<div class="testimonial-author"> <img src="images/ath2.jpg" alt="Author image">                                            
+						<div class="testimonial-author"> <img src="images/ath2.jpg" alt="Author image">
                             <div class="author-info"> Devendra Jhajharia <span class="position"> Indian Paralympic javelin thrower</span></div>
                         </div>
                     </li>
 
                     <li>
-                    	<h1>Suyash</h1>                    	
+                    	<h1>Suyash</h1>
                         <p style="font-size: 20px;">Suyash suffering serious injuries to his upper limbs after getting accidentally electrocuted by unprotected wiring at a construction site. Both Suyash’s arms had to be amputated. Suyash, however, did not give up on his dreams and his love for swimming.
 						Suyash became the first Indian para swimmer to record the ‘A’ qualifying mark for 2016 Paralympics in Rio and left a mark on the biggest stage of them all.  Suyash also won a Silver medal at the 2017 IDM Berlin World Para Swimming World Series and represented India at the 2017 IPC World Para Swimming Championships in Mexico City.</p>
-						<div class="testimonial-author"> <img src="images/ath1.jpg" alt="Author image">                                            
+						<div class="testimonial-author"> <img src="images/ath1.jpg" alt="Author image">
                             <div class="author-info"> Suyash Sahu <span class="position">Indian Para swimmer</span></div>
                         </div>
                     </li>
@@ -283,6 +321,8 @@
             </div>
         </div>
     </section>
+
+
     <section id="team">
         <div class="overlay"></div>
         <div class="row narrow section-intro with-bottom-sep animate-this">
@@ -291,36 +331,38 @@
                 <p style="color: white;">The world we live in ain't perfect. Everyone comes to realize this truth sometime in their life, but there’s no worse way to be acquainted with it than by birth itself to no fault of one’s own.</p>
             </div>
         </div>
-        <div  class="wrap animate-this">
-        	<div class="card">
-			  <img src="images/about_us.jpg" alt="Avatar" style="width:100%; height: 200px;">
-			  <div class="card-container">
-			    <h4 style="text-align: center;"><b>ABOUT US</b></h4> 
-			    <p>Meet the innovators on a mission to create an impact on the society and change how the world communicated with their robots.</p>
-			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a> 
-			  </div>
-			</div>
-			<div class="card" style="">
-			  <img src="images/bionic_arm.jpg" alt="Avatar" style="width:100%; height: 200px;">
-			  <div class="card-container">
-			    <h4 style="text-align: center;"><b>BIOARM</b></h4> 
-			    <p>Meet a 3D printed bionic arm, that can be controlled using one's thoughts alone. Expand your horizons and live your life.</p>
-			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
-			  </div>
-			</div>
-			<div class="card">
-			  <img src="images/tech.jpg" alt="Avatar" style="width:100%; height: 200px;">
-			  <div class="card-container">
-			    <h4  style="text-align: center;"><b>TECHNOLOGY DIVE</b></h4> 
-			    <p>A glimpse of the future and scope of the technology. Connect with us to dive in deeper.</p>
-				<a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a> 
-			  </div>
-			</div>
+
+        <div class="wrap">
+          	<div class="card animate-this">
+      			  <img src="images/about_us.jpg" alt="Avatar" style="width:100%; height: 200px;">
+      			  <div class="card-container">
+      			    <h4 style="text-align: center;"><b>ABOUT US</b></h4>
+      			    <p>Meet the innovators on a mission to create an impact on the society and change how the world communicated with their robots.</p>
+      			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
+      			  </div>
+      			</div>
+      			<div class="card animate-this" style="">
+      			  <img src="images/bionic_arm.jpg" alt="Avatar" style="width:100%; height: 200px;">
+      			  <div class="card-container">
+      			    <h4 style="text-align: center;"><b>BIOARM</b></h4>
+      			    <p>Meet a 3D printed bionic arm, that can be controlled using one's thoughts alone. Expand your horizons and live your life.</p>
+      			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
+      			  </div>
+      			</div>
+      			<div class="card animate-this">
+      			  <img src="images/tech.jpg" alt="Avatar" style="width:100%; height: 200px;">
+      			  <div class="card-container">
+      			    <h4  style="text-align: center;"><b>TECHNOLOGY DIVE</b></h4>
+      			    <p>A glimpse of the future and scope of the technology. Connect with us to dive in deeper.</p>
+      				<a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
+      			  </div>
+      			</div>
         </div>
+
         <!-- <div class="wrap">
             <div class="tile animate-this" ><img src='images/about_us.jpg' />
                 <div class="animate-text">
-                    <h1>About Us</h1>                 
+                    <h1>About Us</h1>
                     <p class="animate-text">Read our story. And meet the innovators on a mission to create an impact on the society and change how the world communicated with their robots.READ MORE >></p>
                 </div>
             </div>
@@ -335,7 +377,7 @@
                     <h1>Technology Dive</h1>
                     <p class="animate-text">A glimpse of the future and scope of the technology. Connect with us to dive in deeper.READ MORE >></p>
                 </div>
-            </div>           
+            </div>
         </div> -->
     </section>
 
@@ -357,7 +399,7 @@
 
     <section id="blogs">
         <div class="overlay" style="background-color: grey;"></div>
-       
+
             <div class="col-twelve">
                 <h1 style="color: white;text-align: center; padding-top: 50px;">EXPLORE OUR BLOGS</h1>
             </div>
@@ -365,15 +407,15 @@
         	<div class="card">
 			  <img src="images/blog1.jpg" alt="Avatar" style="width:100%; height: 200px;">
 			  <div class="card-container">
-			    <h4 style="text-align: center;"><b>BLOG 1</b></h4> 
+			    <h4 style="text-align: center;"><b>BLOG 1</b></h4>
 			    <p>East or west, Cortex is the best.East or west, Cortex is the best.East or west, Cortex is the best.</p>
-			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a> 
+			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
 			  </div>
 			</div>
 			<div class="card" style="">
 			  <img src="images/blog2.jpg" alt="Avatar" style="width:100%; height: 200px;">
 			  <div class="card-container">
-			    <h4 style="text-align: center;"><b>BLOG 2</b></h4> 
+			    <h4 style="text-align: center;"><b>BLOG 2</b></h4>
 			    <p>East or west, Cortex is the best.East or west, Cortex is the best.East or west, Cortex is the best.</p>
 			    <a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
 			  </div>
@@ -381,15 +423,15 @@
 			<div class="card">
 			  <img src="images/blog3.jpg" alt="Avatar" style="width:100%; height: 200px;">
 			  <div class="card-container">
-			    <h4  style="text-align: center;"><b>BLOG 3</b></h4> 
+			    <h4  style="text-align: center;"><b>BLOG 3</b></h4>
 			    <p>East or west, Cortex is the best.East or west, Cortex is the best.East or west, Cortex is the best.</p>
-				<a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a> 
+				<a href="#" style="color: #0C93CB; text-align: center;">READ MORE >></a>
 			  </div>
 			</div>
         </div>
     </section>
 
-    
+
     <footer>
         <div class="footer-main">
             <div class="row">
