@@ -1615,7 +1615,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 	color: #07617d
 }
 
-#bionic h3,
+#bionic h3, #bionic h2,
 #about h3,
 #events h3 {
 	font-family: "montserrat-bold", sans-serif;
